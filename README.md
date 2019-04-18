@@ -13,5 +13,5 @@ You will need the following to install on your computer:
 
 
 * git clone
-* cd 
+* cd CodeTest
 * npm install && npm start
