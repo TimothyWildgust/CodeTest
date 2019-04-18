@@ -1,0 +1,157 @@
+.box {
+  background-color: $box_light;
+  padding: 20px;
+  margin: 20px 0;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.news {
+  margin-bottom: 30px;
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__link {
+    color: $news_title;
+
+    &:hover {
+      text-decoration: none;
+      color: $news_title;
+    }
+  }
+
+  &__desc {
+    color: $news_desc;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+}
+
+.ranking {
+  width: 100%;
+
+  &__mobile-wrapper {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  &__headers {
+    font-size: 10px;
+    color: $news_desc;
+    text-transform: uppercase;
+    font-weight: 500;
+    // text-align: center;
+    padding: 0 3px;
+    overflow-wrap: break-word;
+
+    th {
+      font-weight: 500;
+      max-width: 50px;
+    }
+  }
+
+  &__body {
+    td {
+      padding: 5px 0;
+
+      &:first-of-type {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+    order: 2;
+    margin-left: 10px;
+  }
+
+  &__important {
+    font-weight: bold;
+    color: $news_title;
+    width: 50px;
+  }
+}
+@media only screen and (min-width:992px) {
+  .box {
+    padding: 30px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .news {
+    margin: 0;
+
+    &__padding {
+      padding-left: 0;
+    }
+
+    &__img {
+      margin-bottom: 0;
+    }
+
+    &__desc {
+      margin-bottom: 0;
+    }
+  }
+
+  .ranking {
+    width: 100%;
+    margin-left: 10px;
+
+    &__mobile-wrapper {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    &__headers {
+      font-size: 12px;
+      color: $news_desc;
+      text-transform: uppercase;
+      font-weight: 500;
+      overflow-wrap: break-word;
+
+      th {
+        font-weight: 500;
+        max-width: 50px;
+        padding-bottom: 10px;
+
+        &:first-of-type {
+          width: 50%;
+        }
+      }
+    }
+
+    &__body {
+      td {
+        padding: 5px 0;
+
+        &:first-of-type {
+          width: 50%;
+          display: unset;
+        }
+      }
+    }
+
+    &__icon {
+      margin-left: 0;
+    }
+
+    &__important {
+      font-weight: bold;
+      color: $news_title;
+    }
+  }
+}
